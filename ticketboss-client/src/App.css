@@ -1,0 +1,127 @@
+body { 
+  font-family: 'Inter', sans-serif; 
+  background: #f4f4f9; 
+  color: #333;
+}
+.container { 
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+.header1 {
+  color: #f8079cf5;
+  animation: pulse 1.5s infinite;
+}
+.live-badge { 
+  color: red; 
+  font-weight: bold; 
+  animation: pulse 0.5s infinite; 
+}
+.stats-card {
+   background: white; 
+   padding: 20px; 
+   border-radius: 12px; 
+   box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+   margin-bottom: 20px; 
+  }
+.progress-bar-container { 
+  height: 10px; 
+  background: #eee; 
+  border-radius: 5px; 
+  overflow: hidden; 
+  margin: 15px 0; 
+}
+.progress-bar { 
+  height: 100%; 
+  background: #4CAF50; 
+  transition: width 0.5s ease; 
+}
+.stats-row { 
+  display: flex; 
+  justify-content: space-between; 
+  text-align: center; 
+}
+.stat strong { 
+  display: block; 
+  font-size: 1.5rem; }
+.action-area { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+.card { 
+  background: white; 
+  padding: 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+.input-group { 
+  margin-bottom: 15px; 
+}
+.input-group label { 
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: 500; 
+}
+.input-group input { 
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+button { 
+  width: 100%; 
+  padding: 10px; 
+  background: #222; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+button:disabled { 
+  background: #ccc; 
+}
+.cancel-btn { 
+  background: #ff4d4d; 
+  width: auto; 
+  padding: 5px 10px; 
+  font-size: 0.8rem; 
+}
+.message { 
+  margin-top: 10px; 
+  padding: 10px; 
+  border-radius: 4px; 
+  text-align: center; 
+}
+.message.success { 
+  background: #d4edda; 
+  color: #155724; }
+.message.error { 
+  background: #f8d7da; color: #721c24; 
+}
+ul { 
+  list-style: none; 
+  padding: 0; 
+}
+li { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 0; 
+  border-bottom: 1px solid #eee; 
+}
+
+@keyframes 
+pulse { 
+  0% { 
+    opacity: 1; } 50% { 
+    opacity: 0.5; } 100% { 
+      opacity: 1; } 
+}
